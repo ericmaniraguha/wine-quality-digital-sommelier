@@ -1,0 +1,96 @@
+{
+  "model_name": "Random Forest (tuned)",
+  "task": "regression \u2014 predict sensory quality score (0\u201310) from physicochemical features",
+  "created_utc": "2026-09-15T15:56:52.495748+00:00",
+  "training_rows": 5320,
+  "feature_order": [
+    "fixed_acidity",
+    "volatile_acidity",
+    "citric_acid",
+    "residual_sugar",
+    "chlorides",
+    "free_sulfur_dioxide",
+    "total_sulfur_dioxide",
+    "density",
+    "ph",
+    "sulphates",
+    "alcohol",
+    "is_red",
+    "total_acidity",
+    "free_so2_ratio",
+    "bound_so2",
+    "sugar_to_alcohol",
+    "acidity_to_alcohol",
+    "sulphates_x_alcohol"
+  ],
+  "raw_input_features": [
+    "fixed_acidity",
+    "volatile_acidity",
+    "citric_acid",
+    "residual_sugar",
+    "chlorides",
+    "free_sulfur_dioxide",
+    "total_sulfur_dioxide",
+    "density",
+    "ph",
+    "sulphates",
+    "alcohol"
+  ],
+  "engineered_features": [
+    "is_red",
+    "total_acidity",
+    "free_so2_ratio",
+    "bound_so2",
+    "sugar_to_alcohol",
+    "acidity_to_alcohol",
+    "sulphates_x_alcohol"
+  ],
+  "target": "quality",
+  "test_metrics": {
+    "rmse": 0.6979431403923483,
+    "mae": 0.5357658422826752,
+    "r2": 0.39119047716093347,
+    "within_half_point_pct": 58.27067669172933,
+    "baseline_rmse": 0.894498176580377,
+    "improvement_vs_baseline_pct": 22.0
+  },
+  "hyperparameters": {
+    "bootstrap": "True",
+    "ccp_alpha": "0.0",
+    "criterion": "squared_error",
+    "max_depth": "None",
+    "max_features": "log2",
+    "max_leaf_nodes": "None",
+    "max_samples": "None",
+    "min_impurity_decrease": "0.0",
+    "min_samples_leaf": "1",
+    "min_samples_split": "8",
+    "min_weight_fraction_leaf": "0.0",
+    "monotonic_cst": "None",
+    "n_estimators": "500",
+    "n_jobs": "-1",
+    "oob_score": "False",
+    "random_state": "42",
+    "verbose": "0",
+    "warm_start": "False"
+  },
+  "top_features": [
+    "alcohol",
+    "volatile_acidity",
+    "acidity_to_alcohol",
+    "density",
+    "sulphates_x_alcohol"
+  ],
+  "known_limitations": [
+    "Trained only on Vinho Verde (Portugal) wines \u2014 do not apply to other regions unchanged.",
+    "Regresses toward the mean: under-predicts scores of 8\u20139 and over-predicts 3\u20134.",
+    "Target is a subjective human median; an irreducible noise floor exists.",
+    "Relationships are correlational, not causal \u2014 see section 15."
+  ],
+  "versions": {
+    "python": "3.14.7",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1"
+  }
+}
