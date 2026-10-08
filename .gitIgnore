@@ -1,0 +1,114 @@
+# ==============================
+
+# Python
+
+# ==============================
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+.venv/
+venv/
+env/
+ENV/
+
+# ==============================
+
+# Jupyter Notebook
+
+# ==============================
+
+.ipynb_checkpoints/
+
+# ==============================
+
+# Environment & Secrets
+
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+# ==============================
+
+# Testing / Coverage
+
+# ==============================
+
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# ==============================
+
+# Build / Packaging
+
+# ==============================
+
+build/
+dist/
+*.egg-info/
+
+# ==============================
+
+# OS Files
+
+# ==============================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+
+# IDE / Editors
+
+# ==============================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==============================
+
+# Temporary Files
+
+# ==============================
+
+*.tmp
+*.temp
+*.log
+
+# ==============================
+
+# Local Generated Files
+
+# ==============================
+
+*.bak
+*.backup
+.cache/
+
+# ==============================
+
+# Project-specific
+
+# ==============================
+
+# Keep these tracked:
+
+# figures/
+
+# models/
+
+# outputs/
+
+# winequality-red.csv
+
+# winequality-white.csv
