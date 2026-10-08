@@ -1,10 +1,21 @@
 # 🍷 Wine Quality Prediction — Digital Sommelier
 
 > **From Raw Wine Chemistry to Machine Learning and an Interactive Digital Sommelier**
+[![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python\&logoColor=white)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter\&logoColor=white)](https://jupyter.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas\&logoColor=white)](https://pandas.pydata.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy\&logoColor=white)](https://numpy.org/)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Machine%20Learning-F7931E?logo=scikit-learn\&logoColor=white)](https://scikit-learn.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Digital%20Sommelier-FF4B4B?logo=streamlit\&logoColor=white)](https://streamlit.io/)
+[![Joblib](https://img.shields.io/badge/Joblib-Model%20Serialization-green)](https://joblib.readthedocs.io/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github\&logoColor=white)](https://github.com/ericmaniraguha/wine-predictions)
+
 
 An end-to-end **machine learning application** that predicts wine quality from physicochemical laboratory measurements and presents the prediction through an interactive **Streamlit Digital Sommelier**.
 
 The project uses the **UCI Wine Quality Dataset**, containing red and white Vinho Verde wines from Portugal.
+
+
 
 ---
 
@@ -54,27 +65,27 @@ The project uses the **UCI Wine Quality Dataset** based on Vinho Verde wines fro
 
 Two datasets are included:
 
-* `winequality-red.csv`
-* `winequality-white.csv`
+- `winequality-red.csv`
+- `winequality-white.csv`
 
 Each wine is described using physicochemical measurements together with a sensory **quality score**.
 
 ### Features
 
-| Feature                | Description                         |
-| ---------------------- | ----------------------------------- |
-| `fixed acidity`        | Concentration of non-volatile acids |
-| `volatile acidity`     | Volatile acidity level              |
-| `citric acid`          | Citric acid concentration           |
-| `residual sugar`       | Sugar remaining after fermentation  |
-| `chlorides`            | Chloride concentration              |
-| `free sulfur dioxide`  | Free SO₂ concentration              |
-| `total sulfur dioxide` | Total SO₂ concentration             |
-| `density`              | Density of the wine                 |
-| `pH`                   | Acidity level                       |
-| `sulphates`            | Sulphate concentration              |
-| `alcohol`              | Alcohol percentage                  |
-| `quality`              | Sensory wine quality score          |
+| Feature | Description |
+|---|---|
+| `fixed acidity` | Concentration of non-volatile acids |
+| `volatile acidity` | Volatile acidity level |
+| `citric acid` | Citric acid concentration |
+| `residual sugar` | Sugar remaining after fermentation |
+| `chlorides` | Chloride concentration |
+| `free sulfur dioxide` | Free SO₂ concentration |
+| `total sulfur dioxide` | Total SO₂ concentration |
+| `density` | Density of the wine |
+| `pH` | Acidity level |
+| `sulphates` | Sulphate concentration |
+| `alcohol` | Alcohol percentage |
+| `quality` | Sensory wine quality score |
 
 ---
 
@@ -98,12 +109,12 @@ The physicochemical measurements are used as predictive features.
 
 The red and white wine datasets are loaded and examined to understand:
 
-* Dataset dimensions
-* Feature types
-* Target distribution
-* Descriptive statistics
-* Red vs. white wine differences
-* Potential data-quality issues
+- Dataset dimensions
+- Feature types
+- Target distribution
+- Descriptive statistics
+- Red vs. white wine differences
+- Potential data-quality issues
 
 ---
 
@@ -113,13 +124,13 @@ The raw datasets are assessed and prepared for analysis and modelling.
 
 The cleaning workflow considers:
 
-* Missing values
-* Duplicate observations
-* Data types
-* Outliers
-* Invalid or unusual values
-* Feature distributions
-* Data consistency
+- Missing values
+- Duplicate observations
+- Data types
+- Outliers
+- Invalid or unusual values
+- Feature distributions
+- Data consistency
 
 The objective is to ensure that the modelling dataset is reliable and reproducible.
 
@@ -131,13 +142,13 @@ Exploratory analysis is used to understand the structure of the data and relatio
 
 The analysis includes:
 
-* Feature distributions
-* Wine quality distribution
-* Correlation analysis
-* Outlier analysis
-* Red vs. white wine comparison
-* Feature-to-quality relationships
-* Target correlation analysis
+- Feature distributions
+- Wine quality distribution
+- Correlation analysis
+- Outlier analysis
+- Red vs. white wine comparison
+- Feature-to-quality relationships
+- Target correlation analysis
 
 Generated visualizations are stored in:
 
@@ -147,12 +158,12 @@ figures/
 
 Examples include:
 
-* Correlation heatmap
-* Feature distributions
-* Quality distribution
-* Red vs. white comparison
-* Outlier boxplots
-* Feature relationships with quality
+- Correlation heatmap
+- Feature distributions
+- Quality distribution
+- Red vs. white comparison
+- Outlier boxplots
+- Feature relationships with quality
 
 ---
 
@@ -162,11 +173,11 @@ The project prepares the physicochemical features for machine learning through p
 
 This includes:
 
-* Selecting predictive features
-* Separating features and target
-* Train/test splitting
-* Feature scaling
-* Preparing data for different algorithms
+- Selecting predictive features
+- Separating features and target
+- Train/test splitting
+- Feature scaling
+- Preparing data for different algorithms
 
 Feature-related logic is also maintained in:
 
@@ -184,15 +195,15 @@ The project investigates clustering and dimensionality reduction techniques, inc
 
 ### Clustering
 
-* K-Means
-* Cluster selection
-* Dendrogram analysis
+- K-Means
+- Cluster selection
+- Dendrogram analysis
 
 ### Dimensionality Reduction
 
-* Principal Component Analysis (PCA)
-* Explained variance
-* Two-dimensional PCA projection
+- Principal Component Analysis (PCA)
+- Explained variance
+- Two-dimensional PCA projection
 
 The objective is to understand whether wines naturally form groups based on their physicochemical characteristics.
 
@@ -210,17 +221,17 @@ Multiple supervised learning approaches are evaluated to identify a strong model
 
 The modelling workflow includes:
 
-* Baseline models
-* Cross-validation
-* Model comparison
-* Hyperparameter tuning
-* Test-set evaluation
+- Baseline models
+- Cross-validation
+- Model comparison
+- Hyperparameter tuning
+- Test-set evaluation
 
 The project evaluates model performance using metrics such as:
 
-* **MAE** — Mean Absolute Error
-* **RMSE** — Root Mean Squared Error
-* **R²** — Coefficient of Determination
+- **MAE** — Mean Absolute Error
+- **RMSE** — Root Mean Squared Error
+- **R²** — Coefficient of Determination
 
 ---
 
@@ -383,33 +394,33 @@ wine_quality_analysis.ipynb
 
 The notebook is organized into the following sections:
 
-|  # | Section                            |
-| -: | ---------------------------------- |
+| # | Section |
+|---:|---|
 | 01 | Project Overview & Problem Framing |
-| 02 | Import Libraries                   |
-| 03 | Load the Dataset                   |
-| 04 | Understand the Data Structure      |
-| 05 | Data Quality Assessment            |
-| 06 | Exploratory Data Analysis          |
-| 07 | Feature Engineering & Target       |
-| 08 | Train/Test Split                   |
-| 09 | Feature Scaling                    |
-| 10 | Unsupervised Learning              |
-| 11 | Supervised Learning                |
-| 12 | Hyperparameter Tuning              |
-| 13 | Model Evaluation & Comparison      |
-| 14 | Model Interpretation               |
-| 15 | Business / Winery Insights         |
-| 16 | Final Model                        |
-| 17 | Save Model                         |
-| 18 | Streamlit Digital Sommelier        |
-| 19 | Conclusion & Limitations           |
+| 02 | Import Libraries |
+| 03 | Load the Dataset |
+| 04 | Understand the Data Structure |
+| 05 | Data Quality Assessment |
+| 06 | Exploratory Data Analysis |
+| 07 | Feature Engineering & Target |
+| 08 | Train/Test Split |
+| 09 | Feature Scaling |
+| 10 | Unsupervised Learning |
+| 11 | Supervised Learning |
+| 12 | Hyperparameter Tuning |
+| 13 | Model Evaluation & Comparison |
+| 14 | Model Interpretation |
+| 15 | Business / Winery Insights |
+| 16 | Final Model |
+| 17 | Save Model |
+| 18 | Streamlit Digital Sommelier |
+| 19 | Conclusion & Limitations |
 
 Each major section includes a **🔎 Highlights** explanation covering:
 
-* **What we do**
-* **Why it matters**
-* **What to look for in the output**
+- **What we do**
+- **Why it matters**
+- **What to look for in the output**
 
 ---
 
@@ -463,40 +474,40 @@ wine-predictions/
 
 ### Programming & Analysis
 
-* Python
-* Jupyter Notebook
-* Pandas
-* NumPy
+- Python
+- Jupyter Notebook
+- Pandas
+- NumPy
 
 ### Visualization
 
-* Matplotlib
-* Seaborn
+- Matplotlib
+- Seaborn
 
 ### Machine Learning
 
-* Scikit-learn
-* K-Means
-* PCA
-* Regression / predictive modelling
-* Cross-validation
-* Hyperparameter tuning
+- Scikit-learn
+- K-Means
+- PCA
+- Regression / predictive modelling
+- Cross-validation
+- Hyperparameter tuning
 
 ### Model Explainability
 
-* Feature Importance
-* Permutation Importance
-* Partial Dependence Analysis
+- Feature Importance
+- Permutation Importance
+- Partial Dependence Analysis
 
 ### Application
 
-* Streamlit
-* Joblib
+- Streamlit
+- Joblib
 
 ### Development
 
-* Git
-* GitHub
+- Git
+- GitHub
 
 ---
 
@@ -506,13 +517,13 @@ The project demonstrates how wine laboratory measurements can be transformed int
 
 Potential applications include:
 
-* Wine quality screening
-* Quality-control support
-* Laboratory data analysis
-* Production monitoring
-* Wine classification
-* Data-driven experimentation
-* Decision-support systems
+- Wine quality screening
+- Quality-control support
+- Laboratory data analysis
+- Production monitoring
+- Wine classification
+- Data-driven experimentation
+- Decision-support systems
 
 However, the model should be considered a **decision-support tool**, not a replacement for professional sensory evaluation.
 
@@ -532,15 +543,15 @@ Wine quality is based on sensory evaluation and can therefore contain subjectivi
 
 The dataset primarily contains physicochemical measurements. Other factors that may influence wine quality include:
 
-* Grape variety
-* Vineyard conditions
-* Soil
-* Climate
-* Fermentation process
-* Aging
-* Storage
-* Winemaking techniques
-* Human sensory perception
+- Grape variety
+- Vineyard conditions
+- Soil
+- Climate
+- Fermentation process
+- Aging
+- Storage
+- Winemaking techniques
+- Human sensory perception
 
 These factors are not fully represented.
 
@@ -554,18 +565,18 @@ The Digital Sommelier provides a machine learning prediction based on available 
 
 Possible future development includes:
 
-* Deploying the application to the cloud
-* Dockerizing the application
-* Adding a REST API for model inference
-* Adding MLflow experiment tracking
-* Implementing model monitoring
-* Automated model retraining
-* Adding additional wine datasets
-* Adding wine-style classification
-* Adding prediction confidence/uncertainty
-* Building a wine recommendation engine
-* Integrating natural-language explanations
-* Adding an LLM-powered conversational Digital Sommelier
+- Deploying the application to the cloud
+- Dockerizing the application
+- Adding a REST API for model inference
+- Adding MLflow experiment tracking
+- Implementing model monitoring
+- Automated model retraining
+- Adding additional wine datasets
+- Adding wine-style classification
+- Adding prediction confidence/uncertainty
+- Building a wine recommendation engine
+- Integrating natural-language explanations
+- Adding an LLM-powered conversational Digital Sommelier
 
 ---
 
@@ -589,7 +600,7 @@ Dataset: **UCI Machine Learning Repository — Wine Quality Dataset**
 
 Data Engineer | Data Scientist | ICT Systems & Digital Transformation Consultant
 
-📧 **Email:** [ericmaniraguha@gmail.com](mailto:ericmaniraguha@gmail.com)
+📧 **Email:** ericmaniraguha@gmail.com
 
 🔗 **GitHub:** `github.com/ericmaniraguha`
 
